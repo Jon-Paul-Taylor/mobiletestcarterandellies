@@ -20,7 +20,33 @@
             font-weight: normal;
             font-style: normal;
         }
+        @media (max-width: 600px) {
+        .header-bg {
+            height: auto;
+            padding: 20px 10px 80px; /* less padding */
+        }
 
+        #logo {
+            width: 80%; /* smaller logo */
+            margin-bottom: 5px;
+        }
+
+        .address, .phonenumber {
+            font-size: 18px; /* smaller text */
+            margin: 2px 0;
+        }
+
+        .navigation ul {
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+        }
+
+        .navigation {
+            padding: 15px 0;
+        }
+        }
+        
         #SEOinfo {
             position: absolute;
             top: 10px;

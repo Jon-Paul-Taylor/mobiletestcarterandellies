@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="description" content="Website built for Carter & Ellie's Ice Cream Shop, about page">
+        <meta name="author" content="Jonathan Taylor">
+
+        <title>
+            Carter & Ellie's
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <style>
+        #logo {
+            display: block;
+            margin: 0 auto;
+            border: solid 5px hotpink;
+        }
+
+        .address{
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            color: white;
+        }
+
+        .address a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .phonenumber{
+            font-family: 'Playfair Display', serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        .phonenumber a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        html, body {
+            margin: 0; 
+            padding: 0; 
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        .header-bg {
+            position: relative;
+            display: flex;
+            flex-direction: column; 
+            width: 100%;
+            height: 90%;
+            padding: 35px 0px;
+            background-image: url('all_images/woodbackground.jpg');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-bg {
+            background-image: url('all_images/woodbackground.jpg');
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        
+        /*               the logo & head bg - links                */
+
+        .navigation { 
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px;
+            border: solid black 2px;
+            font-size: 18px;  
+            background-color: hotpink;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            background-color: hotpink;
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding: 2px;
+            margin: 0;
+            display: flex;
+            gap: 30px; /* space between links */
+            justify-content: center;
+            background-color: hotpink;
+        }
+
+        .navigation a:hover {
+            background-color: rgb(255,135,180);
+            padding: 8px;
+            border: solid 2px black;
+        }
+        
+        .navigation a.active {
+            background-color: rgb(255,135,180);
+            padding: 8px;
+            border: solid 2px black;
+        }
+        
+        /*         navigation ---> About info              */
+
+        #aboutinfo{
+            border: solid 5px black;
+            padding: 15px;
+            background-color: lightpink;
+            max-width: 700px;
+            margin: auto; 
+        }
+
+        .infoabout {
+            border: solid 3px hotpink;
+            display: flex;
+            justify-content: center;
+            width: fit-content;
+            margin: 20px auto;
+            margin-bottom: 20px;
+        }
+
+        .formargin{
+            margin-top: 40px;
+            margin-bottom: 50px;
+            padding-bottom: 20px ;
+            padding-top: 20px;
+        }
+
+        .sociallinks{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .sociallinks a {
+            text-decoration: none;
+            color: white;
+        }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="header-bg">
+            <br>
+            <img id=logo src="all_images/newlogo.jpeg" width="650" alt="carter and ellies logo">
+            <p class="address"><a href="https://www.google.com/maps/place/Carter+%26+Ellie%E2%80%99s/@43.0798827,-70.9385216,17z/data=!3m1!4b1!4m6!3m5!1s0x89e2edd367457d39:0xe2ade4b5cc059365!8m2!3d43.0798788!4d-70.9359413!16s%2Fg%2F11ybxc8rxn?entry=ttu&g_ep=EgoyMDI1MDcxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">80 Main St. Newmarket, NH</a></p>
+            <p class="phonenumber"><a href="tel:6032925821">(603)-292-5821</a></p>
+
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="about.html" class="active">ABOUT</a></li>
+                        <li><a href="https://www.doordash.com/store/carter-&-ellie%E2%80%99s-newmarket-34731003/73771550/?srsltid=AfmBOooca4TdLVokmNqAN270uCiU-nz0BEb7LoRa5yhGu63pVkdvdjyX">DOORDASH</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="bottom-bg">
+        <br>
+            <div class="formargin">
+                <div class="infoabout">
+                    <p id="aboutinfo">
+                        COMING SOON!
+                    </p>
+                </div>
+            </div>
+
+            <div class="sociallinks">
+                <p>
+                    <img src="all_images/facebook_icon.png" alt="Facebook" width="20">
+                    <a href="https://www.facebook.com/Carterandellies/">Facebook</a>
+                </p>
+
+                <p>
+                    <img src="all_images/instagram_icon.png" alt="Instagram" width="20">
+                    <a href="https://www.instagram.com/p/DLlR1UHtOTr/">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
